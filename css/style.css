@@ -587,7 +587,7 @@ section#intro {
 
 .skills-icon {
   font-size: 3em;
-  color: #2162A4;
+  color: #289BBC;
 }
 
 
@@ -661,7 +661,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 .social-link {
   font-size: 2em;
-  color: #2162A4;
+  color: #289BBC;
 }
 
 
@@ -880,7 +880,7 @@ footer .social-widget ul.team-social li a {
 	position: relative;
 	display: inline-block;
 	outline: none;
-	color: #2162A4;
+	color: #000;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
