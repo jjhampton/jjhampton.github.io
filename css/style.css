@@ -661,17 +661,18 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	text-align: left;
 }
 
-.social-link-container {
-  margin-top: 2em;
+.contact-type {
+  margin-bottom: 1em;
 }
-
-.social-link-container a {
-  padding: 1em;
-}
-
 .social-link {
-  font-size: 2em;
+  font-size: 20px;
   color: #289BBC;
+  padding-right: 1em;
+}
+
+.contact-text {
+  font-size: 20px;
+  color: #666;
 }
 
 
