@@ -1062,4 +1062,8 @@ a.btn:focus{
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
+
+  .site-logo a.brand {
+    font-size: 24px;
+  }
 }
