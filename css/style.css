@@ -607,6 +607,10 @@ section#intro {
     margin: 10px;
 }
 
+.item button {
+  color: #111;
+}
+
 .item img {
     display: block;
     width: 100%;
