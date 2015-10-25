@@ -573,9 +573,10 @@ section#intro {
 --- About
 ============================ */
 
-li {
+.about-items {
   text-align: left;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 
