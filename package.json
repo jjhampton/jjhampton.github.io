@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jjhampton/johnhampton.net/issues"
   },
-  "homepage": "https://github.com/jjhampton/johnhampton.net#readme"
+  "homepage": "https://github.com/jjhampton/johnhampton.net#readme",
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
+  }
 }
