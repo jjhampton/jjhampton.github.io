@@ -1,0 +1,24 @@
+.u-upper {
+	text-transform: uppercase;
+}
+
+.u-bold {
+	font-weight: bold;
+}
+
+.u-center {
+	text-align: center;
+}
+
+.u-text-link {
+	color: $color-blue-light;
+
+	&:hover {
+		cursor: pointer;
+		color: $color-blue-dark;
+	}
+
+	&:active {
+		color: $color-blue-darker;
+	}
+}

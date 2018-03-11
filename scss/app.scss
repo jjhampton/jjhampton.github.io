@@ -1,42 +1,7 @@
-@import './node_modules/normalize.css/normalize';
+@import './scss/variables/variables';
 
-$mdc-theme-primary: #607D8B; // Blue Grey
-$mdc-theme-secondary: #FF5722; // Deep Orange
-$mdc-theme-background: #fff; // White
+@import './scss/base/base';
 
-.toolbar__section--links {
-    align-items: flex-end;
-    line-height: 1.5rem;
-}
+@import './scss/components/components';
 
-.toolbar__nav {
-    //padding: $mdc-toolbar-icon-padding;
-}
-
-.toolbar__nav__item {
-    color: #fff;
-    padding: 4px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: normal;
-    transition: font-weight .15s ease-in-out;
-
-    & + & {
-        margin-left: 16px;
-    }
-
-    &:hover {
-        font-weight: 500;
-    }
-}
-
-.toolbar__menu-icon {
-    display: none;
-}
-
-@media(max-width: 768px) {
-    .toolbar__menu-icon {
-        display: block;
-    }
-}
+@import './scss/utilities/utilities';
