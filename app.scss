@@ -1,4 +1,7 @@
+@import './node_modules/normalize.css/normalize';
+
 @import "@material/button/mdc-button";
+@import "@material/toolbar/mdc-toolbar";
 
 .foo-button {
   @include mdc-button-ink-color(teal);

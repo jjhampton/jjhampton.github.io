@@ -20,7 +20,9 @@
   "dependencies": {
     "@material/button": "^0.32.0",
     "@material/ripple": "^0.32.0",
-    "material-components-web": "^0.32.0"
+    "@material/toolbar": "^0.32.0",
+    "material-components-web": "^0.32.0",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
