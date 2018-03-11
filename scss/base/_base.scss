@@ -3,8 +3,22 @@
 html {
     box-sizing: border-box;
     font-family: $base-font-family;
+    font-size: #{$base-font-size}px;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+a {
+    color: $color-blue-dark;
+
+	&:hover {
+		cursor: pointer;
+		color: $color-blue-light;
+	}
+
+	&:active {
+		color: $color-blue-darker;
+	}
 }

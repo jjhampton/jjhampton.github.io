@@ -11,26 +11,21 @@
 
 <body>
 
-  <!-- Nav -->
-  <nav>
-    <section>
-        <span>John Hampton &bull; Software Developer</span>
+  <!-- Header -->
+  <header class="header">
+    <section class="header-title">
+        John Hampton &bull; Software Developer
     </section>
-    <section>
-      <nav>
-          <a href="#about">About</a>
-          <a href="#works">Work</a>
-          <a href="#contact">Contact</a>
-      </nav>
-    </section>
-  </nav>
+    <nav class="header-nav">
+        <a class="header-nav-item" href="#about">About</a>
+        <a class="header-nav-item" href="#work">Work</a>
+        <a class="header-nav-item" href="#contact">Contact</a>
+    </nav>
+  </header>
   <main>
     <div>
       <!-- Intro -->
       <section>
-        <h1>
-          John Hampton &bull; Software Developer
-        </h1>
         <h2>My philosophy</h2>
 
         <p>Software can improve people's lives and solve real world problems.</p>
@@ -39,10 +34,10 @@
       </section>
 
       <!-- About -->
-      <section>
+      <section id="about">
         <img src="img/photo.jpg" alt="Photograph of John Hampton" class="profile-photo">
         <ul>
-          <li>I concentrate on single-page-application (SPA) Javascript and front-end UI/UX development.  I also do back-end web development in NodeJs/Express, ASP.NET and Ruby on Rails.</li>
+          <li>I concentrate on single-page-application (SPA) Javascript and front-end UI/UX web development.  I also do back-end web development with NodeJS/Express, ASP.NET Core and Ruby on Rails.</li>
           <li>I spend my weekdays as a web developer at <a href="https://www.eventbooking.com">EventBooking</a> in Knoxville, TN.  I'm also spend time with the community at <a href="https://www.operationcode.org">Operation Code</a>, a non-profit that helps military veterans transition to careers in software development and other technology-focused fields.</li>
           <li>Who else am I? My lifelong interests are electronic music (sampled, synth, or DJ sets), martial arts, science fiction, and the DIY ethic.  I'm proud to have served as a medical laboratory supervisor and soldier in the U.S. Army.  I'd love to hear your thoughts on any of those topics.</li>
           <li>If you're interested in collaborating to build software that creates connections between people around the world, feel free to get in touch.</li>
@@ -68,7 +63,7 @@
       </section>
 
       <!-- Work -->
-      <section>
+      <section id="work">
         <h2 class="h-bold">Work</h2>
         <!-- TODO: Add more recent work experience here -->
         <div>
@@ -80,7 +75,7 @@
       </section>
 
       <!-- Contact -->
-      <section>
+      <section id="contact">
         <h2 class="h-bold">Contact me</h2>
         <div><i class="fa fa-envelope social-link"></i><span class="contact-text">Email: john@johnhampton.net<span></div>
         <div><a href="https://twitter.com/johnjhampton"><i class="fa fa-twitter social-link"></i><span class="contact-text">Twitter: @johnjhampton</span></a></div>

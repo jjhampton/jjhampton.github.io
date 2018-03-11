@@ -1,0 +1,41 @@
+$header-height: 60;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    background: $color-gray-dark;
+    height: #{$header-height}px;    
+    padding: 0 #{$padding-half}px;
+    
+}
+
+.header-title {
+    color: $color-white;
+    font-size: #{$font-xlg}px;
+    font-weight: 500;
+}
+
+.header-nav {
+
+}
+
+.header-nav-item {
+    color: $color-white;
+    font-weight: 500;
+    padding: 4px;
+    text-decoration: none;     
+    transition: color 0.15s ease-in-out;   
+
+	&:hover {
+        color: $color-turquoise-light;
+	}
+
+    & + & {
+        margin-left: #{$padding-half}px;
+    }
+}
