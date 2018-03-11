@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jjhampton/johnhampton.net#readme",
   "dependencies": {
     "@material/button": "^0.32.0",
+    "@material/ripple": "^0.32.0",
     "material-components-web": "^0.32.0"
   },
   "devDependencies": {
