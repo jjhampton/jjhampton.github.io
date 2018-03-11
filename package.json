@@ -20,6 +20,7 @@
   "dependencies": {
     "@material/button": "^0.32.0",
     "@material/ripple": "^0.32.0",
+    "@material/theme": "^0.30.0",
     "@material/toolbar": "^0.32.0",
     "@material/typography": "^0.28.0",
     "material-components-web": "^0.32.0",

@@ -4,20 +4,39 @@
 @import "@material/toolbar/mdc-toolbar";
 @import "@material/typography/mdc-typography";
 
+$mdc-theme-primary: #607D8B; // Blue Grey
+$mdc-theme-secondary: #FF5722; // Deep Orange
+$mdc-theme-background: #fff; // White
+
+@import "@material/theme/mdc-theme";
+
 .foo-button {
   @include mdc-button-ink-color(teal);
   @include mdc-states(teal);
 }
 
-.toolbar-nav {
+.toolbar__row {
+    @include mdc-toolbar-fill-color($mdc-theme-primary);
+}
+
+.toolbar__nav {
     padding: 0 16px;
 }
 
-.toolbar-nav-item {
+.toolbar__nav__item {
     color: #fff;
+    padding: 4px;
+    letter-spacing: 2px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    transition: font-weight .15s ease-in-out;
 
     & + & {
         margin-left: 16px;
+    }
+
+    &:hover {
+        font-weight: 500;
     }
 }
