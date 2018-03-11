@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all -p watch-css lite-server",
-    "build-css": "node-sass-chokidar ./scss -o ./css",
+    "build-css": "node-sass-chokidar ./scss -o ./css && postcss ./css --replace --use autoprefixer",
     "watch-css": "npm run build-css && node-sass-chokidar ./scss -o ./css --watch --recursive",
     "lite-server": "lite-server"
   },
@@ -20,12 +20,12 @@
     "url": "https://github.com/jjhampton/johnhampton.net/issues"
   },
   "homepage": "https://github.com/jjhampton/johnhampton.net#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.0"
-  },
   "devDependencies": {
+    "autoprefixer": "^8.1.0",
     "lite-server": "^2.3.0",
     "node-sass-chokidar": "^0.0.2",
-    "npm-run-all": "^4.0.2"
+    "normalize.css": "^8.0.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^5.0.0"
   }
 }
