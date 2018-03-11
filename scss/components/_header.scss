@@ -1,4 +1,4 @@
-$header-height: 60;
+$header-height: 90;
 
 .header {
     display: flex;
@@ -8,16 +8,21 @@ $header-height: 60;
     position: sticky;
     top: 0;
 
-    background: $color-gray-dark;
+    background-color: $color-gray-dark;
     height: #{$header-height}px;    
     padding: 0 #{$padding-half}px;
-    
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .header-title {
     color: $color-white;
-    font-size: #{$font-xlg}px;
+    font-size: 28px;
     font-weight: 500;
+    transition: font-size 0.3s ease-in-out;    
+
+    .sticky-parent & {
+        font-size: #{$font-xlg}px;        
+    }
 }
 
 .header-nav {
