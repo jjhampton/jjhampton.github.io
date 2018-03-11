@@ -1,26 +1,16 @@
 @import './node_modules/normalize.css/normalize';
 
-@import "@material/button/mdc-button";
-@import "@material/toolbar/mdc-toolbar";
-@import "@material/typography/mdc-typography";
-
 $mdc-theme-primary: #607D8B; // Blue Grey
 $mdc-theme-secondary: #FF5722; // Deep Orange
 $mdc-theme-background: #fff; // White
 
-@import "@material/theme/mdc-theme";
-
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
-}
-
-.toolbar__row {
-    @include mdc-toolbar-fill-color($mdc-theme-primary);
+.toolbar__section--links {
+    align-items: flex-end;
+    line-height: 1.5rem;
 }
 
 .toolbar__nav {
-    padding: 0 16px;
+    //padding: $mdc-toolbar-icon-padding;
 }
 
 .toolbar__nav__item {
@@ -38,5 +28,15 @@ $mdc-theme-background: #fff; // White
 
     &:hover {
         font-weight: 500;
+    }
+}
+
+.toolbar__menu-icon {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .toolbar__menu-icon {
+        display: block;
     }
 }

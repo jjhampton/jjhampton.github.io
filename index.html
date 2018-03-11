@@ -4,46 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no">
-  <title>John Hampton | Web Developer</title>
+  <title>John Hampton | Software Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="bundle.css">
 </head>
 
-<body class="mdc-typography">
+<body>
 
   <!-- Toolbar -->
-  <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
-    <div class="mdc-toolbar__row toolbar__row">
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span class="material-icons mdc-toolbar__menu-icon">menu</span>
-          <span class="mdc-toolbar__title">John Hampton</span>
+  <header>
+    <div>
+      <section>
+          <span>John Hampton &bull; Software Developer</span>
       </section>
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-          <nav class="toolbar__nav">
-              <a class="toolbar__nav__item" href="#about">About</a>
-              <a class="toolbar__nav__item" href="#works">Work</a>
-              <a class="toolbar__nav__item" href="#contact">Contact</a>
-            </nav>
+      <section>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#works">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
       </section>
     </div>
   </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#works">Portfolio</a>
-      <a href="http://jjhampton.github.io/blog/">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
   <main>
     <div>
       <!-- Intro -->
       <section>
         <h1>
-          John Hampton | Web Developer
+          John Hampton &bull; Software Developer
         </h1>
         <h2>My philosophy</h2>
 
@@ -84,54 +71,11 @@
       <!-- Work -->
       <section>
         <h2 class="h-bold">Work</h2>
-
-        <div>
-          <a href="img/works/cross-pollinate-screencapture.jpg"><img src="img/works/cross-pollinate-thumbnail.png" alt="Cross Pollinate"></a>
-          <p>CMS-themed web application to post problems you need help with solving, and to volunteer to help others solve their own. Built with Ember.js for the front-end and Parse for the  backend API / database.</p>
-          <a><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/cross-pollinate"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
-        <div>
-          <a href="img/works/pixel-perfect-screencapture.jpg"><img src="img/works/pixel-perfect-thumbnail.png" alt="Pixel Perfect"></a>
-          <p>Pixel-perfect website recreation of a design mockup using semantic HTML5, CSS with float layouts and absolute/relative positioning, and CSS3 hover transitions.</p>
-          <a href="http://jjhampton.github.io/1.4-pixel-perfect/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/1.4-pixel-perfect"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
+        <!-- TODO: Add more recent work experience here -->
         <div>
           <a href="img/works/total-fusion-thumbnail.png"><img src="img/works/total-fusion-thumbnail.png" alt="Total Fusion"></a>
-          <p>Restaurant menu built with Backbone.js, Skeleton responsive CSS grid, and Parse backend, using Backbone views to dynamically update the customer orders.</p>
-          <a href="http://jjhampton.github.io/7.4-total-fusion/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/7.4-total-fusion"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
-        <div>
-          <a href="img/works/parkfreely-screencapture.png"><img src="img/works/parkfreely-screencapture.png" alt="ParkFreely"></a>
-          <p>Mobile-friendly crowdsourced free-parking app built with Ember.js, originally prototyped with a team during a 24 hour sprint for the Imagine Upstate Civic Hackathon.</p>
-          <a href="http://jjhampton.github.io/parkfreely/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/parkfreely"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
-        <div>
-          <a href="img/works/calculate-this-screencapture.png"><img src="img/works/calculate-this-screencapture.png" alt="Responsive Calculator"></a>
-          <p>Fully functional calculator using HTML5/CSS3, Javascript, and the Neat responsive grid, using native DOM event handlers with vanilla Javascript functions for mathematical calculations.</p>
-          <a href="http://jjhampton.github.io/2.4-responsive-calculator/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/2.4-responsive-calculator"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
-        <div>
-          <a href="img/works/etsy-recreation-screencapture.jpg"><img src="img/works/etsy-recreation-thumbnail.png" alt="Etsy Recreation"></a>
-          <p>Recreation of Etsy's search results page using JSON data models requested via AJAX from the Etsy API, Handlebars templating for DOM interpolation, and Neat responsive grid.</p>
-          <a href="http://jjhampton.github.io/3.4-etsy-recreation/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/3.4-etsy-recreation"><button class="foo-button mdc-button">View Code</button></a>
-        </div>
-
-        <div>
-          <a href="img/works/github-remix-screencapture.png"><img src="img/works/github-remix-thumbnail.png" alt="GitHub remix"></a>
-          <p>Remix of my GitHub profile using JSON data models from the Github API. I used AJAX callbacks and asynchronous code to insert the correct JSON data to the DOM.</p>
-          <a href="http://jjhampton.github.io/4.4-github-profile/"><button class="foo-button mdc-button">Live Demo</button></a>
-          <a href="https://github.com/jjhampton/4.4-github-profile"><button class="foo-button mdc-button">View Code</button></a>
+          <p>Restaurant menu application built with Backbone.js, Skeleton's responsive CSS grid, and an ASP.NET Core backend.</p>
+          <a href="https://github.com/jjhampton/total-fusion-api"><button>View Code</button></a>
         </div>
 
       </section>
@@ -151,8 +95,6 @@
       </footer>
     </div>
   </main>
-
-  <script src="bundle.js" async></script>
 
 </body>
 
