@@ -1,1 +1,10 @@
 @import './node_modules/normalize.css/normalize';
+
+html {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
