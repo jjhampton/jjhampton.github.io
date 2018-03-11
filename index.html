@@ -3,28 +3,31 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no">
   <title>John Hampton | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="bundle.css">
-  <script src="bundle.js" async></script>
 </head>
 
-<body>
+<body class="mdc-typography">
+
   <!-- Toolbar -->
-  <header class="mdc-toolbar">
+  <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
     <div class="mdc-toolbar__row">
-      <section class="mcd-toolbar__section mdc-toolbar__section--align-start">
-          <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-          <span class="mdc-toolbar__title">Title</span>
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <span class="material-icons mdc-toolbar__menu-icon">menu</span>
+          <span class="mdc-toolbar__title">John Hampton</span>
       </section>
-      <!-- <span>Title</span>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#works">Portfolio</a>
-        <a href="http://jjhampton.github.io/blog/">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav> -->
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+          <nav class="toolbar-nav">
+              <a class="toolbar-nav-item" href="#about">About Me</a>
+              <a class="toolbar-nav-item" href="#skills">Skills</a>
+              <a class="toolbar-nav-item" href="#works">Portfolio</a>
+              <a class="toolbar-nav-item" href="http://jjhampton.github.io/blog/">Blog</a>
+              <a class="toolbar-nav-item" href="#contact">Contact</a>
+            </nav>
+      </section>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -150,6 +153,8 @@
       </footer>
     </div>
   </main>
+
+  <script src="bundle.js" async></script>
 
 </body>
 
