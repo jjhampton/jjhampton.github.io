@@ -1,11 +1,10 @@
 {
   "name": "johnhampton.net",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devstart": "browser-sync start --config bs-config.js"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,15 @@
   },
   "homepage": "https://github.com/jjhampton/johnhampton.net#readme",
   "dependencies": {
-    "material-design-lite": "^1.3.0"
+    "material-components-web": "^0.32.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "extract-loader": "^1.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
   }
 }
