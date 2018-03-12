@@ -1,0 +1,40 @@
+.section {
+    padding: #{$padding}px;
+
+    &--stretch {
+        padding: #{$padding}px 0;
+    }
+
+    &--flex {
+        display: flex;
+    }
+    
+    &--linkable {
+        padding-top: #{$padding* 2}px;
+    }
+}
+
+.section-label {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.section-label-heading {
+    font-size: #{$font-lg}px;
+    letter-spacing: 2px;    
+    text-transform: uppercase;
+}
+
+.section-content {
+}
+
+.section-list {
+	list-style-type: disc;
+}
+
+.section-list-item {
+    & + &  {
+        margin-top: #{$padding-half}px;
+    }
+}

@@ -1,4 +1,4 @@
 .sticky-parent #sticky-header {
     height: #{$sticky-header-height}px;
-    background-color: transparentize($color-sticky-header, .3);    
+    background-color: transparentize($color-sticky-header, .3);
 }

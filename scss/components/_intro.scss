@@ -1,9 +1,4 @@
 .intro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
     background: url(../../img/earthspace.jpg) no-repeat center center;
     background-size: cover;
     height: #{$intro-height}px;
@@ -22,7 +17,8 @@
 }
 
 .intro-list {
-    color: $color-white;    
+    color: $color-white;
+    margin-top: #{$padding-half}px;  
     text-align: center;
 }
 
@@ -31,7 +27,7 @@
     font-size: #{$font-lg}px;
     
     & + &  {
-        margin-top: #{$padding-quarter}px;
+        margin-top: #{$padding-half}px;
     }
 
     &--lg {

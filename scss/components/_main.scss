@@ -1,3 +1,4 @@
 .main {
-    //padding: 0 #{$padding}px;
+    position: relative;
+    top: -#{$header-height}px;
 }

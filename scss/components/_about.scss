@@ -1,3 +1,20 @@
+$about-photo-image-height: 110;
+
 .about {
-    margin-top: #{$intro-height}px;
+    
+}
+
+.about-photo {
+    margin-top: #{$padding-half}px;    
+}
+
+.about-photo-image {
+    border-radius: 50%;
+    height: #{$about-photo-image-height}px;
+    width: #{$about-photo-image-height}px;
+}
+
+.about-photo-caption {
+    font-size: #{$font-lg}px;
+    font-weight: 500;
 }
