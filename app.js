@@ -31,6 +31,6 @@ function debounce(fn, delay) {
 		var callNow = !timeout;
 		clearTimeout(timeout);
 		timeout = setTimeout(later, delay);
-		if (callNow) func.apply(context, args);
+		if (callNow) fn.apply(context, args);
 	};
 };
