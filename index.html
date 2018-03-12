@@ -22,72 +22,74 @@
         <a class="header-nav-item" href="#contact">Contact</a>
     </nav>
   </header>
-  <main>
-    <div>
-      <!-- Intro -->
-      <section>
-        <h2>My philosophy</h2>
+  <main class="main">
+    <!-- Intro -->
+    <section class="section intro">
+      <h1 class="intro-heading">My Philosophy</h1>
+      <ul class="intro-list">
+          <li class="intro-list-item">Software is a tool we can use to improve people's lives and solve real world problems.</li>
+          <li class="intro-list-item">A healthy mix of imaginative expression and analytic thinking can transform ideas into reality.</li>
+          <li class="intro-list-item intro-list-item--lg">
+            <a href="https://www.ted.com/talks/peter_diamandis_abundance_is_our_future" class="intro-list-item-link" target="_blank" rel="noopener noreferrer"> The solutions are possible.</a>
+          </li>   
+      </ul>   
+    </section>
 
-        <p>Software can improve people's lives and solve real world problems.</p>
-        <p><a href="https://www.ted.com/talks/peter_diamandis_abundance_is_our_future"> The solutions are possible</a>.</p>
-        <p>A healthy mix of imaginative expression and analytic thinking can transform ideas into reality.</p>
-      </section>
+    <!-- About -->
+    <section class="section about" id="about">
+      <img src="img/photo.jpg" alt="Photograph of John Hampton" class="profile-photo">
+      <ul>
+        <li>I concentrate on single-page-application (SPA) Javascript and front-end UI/UX web development.  I also do back-end web development with NodeJS/Express, ASP.NET Core and Ruby on Rails.</li>
+        <li>I spend my weekdays as a web developer at <a href="https://www.eventbooking.com">EventBooking</a> in Knoxville, TN.  I'm also spend time with the community at <a href="https://www.operationcode.org">Operation Code</a>, a non-profit that helps military veterans transition to careers in software development and other technology-focused fields.</li>
+        <li>Who else am I? My lifelong interests are electronic music (sampled, synth, or DJ sets), martial arts, science fiction, and the DIY ethic.  I'm proud to have served as a medical laboratory supervisor and soldier in the U.S. Army.  I'd love to hear your thoughts on any of those topics.</li>
+        <li>If you're interested in collaborating to build software that creates connections between people around the world, feel free to get in touch.</li>
+      </ul>
+    </section>
 
-      <!-- About -->
-      <section id="about">
-        <img src="img/photo.jpg" alt="Photograph of John Hampton" class="profile-photo">
-        <ul>
-          <li>I concentrate on single-page-application (SPA) Javascript and front-end UI/UX web development.  I also do back-end web development with NodeJS/Express, ASP.NET Core and Ruby on Rails.</li>
-          <li>I spend my weekdays as a web developer at <a href="https://www.eventbooking.com">EventBooking</a> in Knoxville, TN.  I'm also spend time with the community at <a href="https://www.operationcode.org">Operation Code</a>, a non-profit that helps military veterans transition to careers in software development and other technology-focused fields.</li>
-          <li>Who else am I? My lifelong interests are electronic music (sampled, synth, or DJ sets), martial arts, science fiction, and the DIY ethic.  I'm proud to have served as a medical laboratory supervisor and soldier in the U.S. Army.  I'd love to hear your thoughts on any of those topics.</li>
-          <li>If you're interested in collaborating to build software that creates connections between people around the world, feel free to get in touch.</li>
-        </ul>
-      </section>
+    <!-- Tools -->
+    <section class="section">
+      <h2>Toolchain</h2>
+      <p>Here are some software tools I've used over the last few years:</p>
+      <ul>
+        <li>Javascript: Typescript/ES6/2015/2016+</li>
+        <li>Javascript SPA frameworks: AngularJS 1.x, Ember, React, Backbone</li>
+        <li>Javascript Package Managers: NPM, Bower</li>
+        <li>Javascript Unit Testing: Jasmine, Mocha</li>            
+        <li>CSS3: Flexbox, Preprocessors (Less, Sass)</li>
+        <li>CSS Responsive Frameworks: Bootstrap, Neat, Materialize</li>
+        <li>Back-end: NodeJS / Express, Ruby on Rails, ASP.NET WebAPI, Parse (BAAS)</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Text Editors / IDEs: Visual Studio 2015, Resharper, Visual Studio Code, Atom</li>
+        <li>Continuous Integration: TeamCity, CircleCI, TravisCI</li>
+      </ul>
+    </section>
 
-      <!-- Tools -->
-      <section>
-        <h2>Toolchain</h2>
-        <p>Here are some software tools I've used over the last few years:</p>
-        <ul>
-          <li>Javascript: Typescript/ES6/2015/2016+</li>
-          <li>Javascript SPA frameworks: AngularJS 1.x, Ember, React, Backbone</li>
-          <li>Javascript Package Managers: NPM, Bower</li>
-          <li>Javascript Unit Testing: Jasmine, Mocha</li>            
-          <li>CSS3: Flexbox, Preprocessors (Less, Sass)</li>
-          <li>CSS Responsive Frameworks: Bootstrap, Neat, Materialize</li>
-          <li>Back-end: NodeJS / Express, Ruby on Rails, ASP.NET WebAPI, Parse (BAAS)</li>
-          <li>Version Control: Git, GitHub</li>
-          <li>Text Editors / IDEs: Visual Studio 2015, Resharper, Visual Studio Code, Atom</li>
-          <li>Continuous Integration: TeamCity, CircleCI, TravisCI</li>
-        </ul>
-      </section>
+    <!-- Work -->
+    <section class="section" id="work">
+      <h2 class="h-bold">Work</h2>
+      <!-- TODO: Add more recent work experience here -->
+      <div>
+        <a href="img/works/total-fusion-thumbnail.png"><img src="img/works/total-fusion-thumbnail.png" alt="Total Fusion"></a>
+        <p>Restaurant menu application built with Backbone.js, Skeleton's responsive CSS grid, and an ASP.NET Core backend.</p>
+        <a href="https://github.com/jjhampton/total-fusion-api"><button>View Code</button></a>
+      </div>
 
-      <!-- Work -->
-      <section id="work">
-        <h2 class="h-bold">Work</h2>
-        <!-- TODO: Add more recent work experience here -->
-        <div>
-          <a href="img/works/total-fusion-thumbnail.png"><img src="img/works/total-fusion-thumbnail.png" alt="Total Fusion"></a>
-          <p>Restaurant menu application built with Backbone.js, Skeleton's responsive CSS grid, and an ASP.NET Core backend.</p>
-          <a href="https://github.com/jjhampton/total-fusion-api"><button>View Code</button></a>
-        </div>
+    </section>
 
-      </section>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2 class="h-bold">Contact me</h2>
+      <div><i class="fa fa-envelope social-link"></i><span class="contact-text">Email: john@johnhampton.net<span></div>
+      <div><a href="https://twitter.com/johnjhampton"><i class="fa fa-twitter social-link"></i><span class="contact-text">Twitter: @johnjhampton</span></a></div>
+      <div><a href="https://github.com/jjhampton/"><i class="fa fa-github social-link"></i><span class="contact-text">GitHub: jjhampton</span></a></div>
+      <div><a href="https://www.linkedin.com/in/jjhampton"><i class="fa fa-linkedin social-link"></i><span class="contact-text">LinkedIn: jjhampton</span></a></div>
+    </section>
 
-      <!-- Contact -->
-      <section id="contact">
-        <h2 class="h-bold">Contact me</h2>
-        <div><i class="fa fa-envelope social-link"></i><span class="contact-text">Email: john@johnhampton.net<span></div>
-        <div><a href="https://twitter.com/johnjhampton"><i class="fa fa-twitter social-link"></i><span class="contact-text">Twitter: @johnjhampton</span></a></div>
-        <div><a href="https://github.com/jjhampton/"><i class="fa fa-github social-link"></i><span class="contact-text">GitHub: jjhampton</span></a></div>
-        <div><a href="https://www.linkedin.com/in/jjhampton"><i class="fa fa-linkedin social-link"></i><span class="contact-text">LinkedIn: jjhampton</span></a></div>
-      </section>
+    <!-- Footer -->
+    <footer>
+      <p class="copyright-text">&copy; 2018 John Hampton</p>
+    </footer>
 
-      <!-- Footer -->
-      <footer>
-        <p class="copyright-text">&copy; 2018 John Hampton</p>
-      </footer>
-    </div>
   </main>
 
   <script src="app.js"></script>

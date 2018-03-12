@@ -1,0 +1,50 @@
+.intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: url(../../img/earthspace.jpg) no-repeat center center;
+    background-size: cover;
+    height: #{$intro-height}px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-heading {
+    color: $color-white;
+    font-size: #{$font-xlg}px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-list {
+    color: $color-white;    
+    text-align: center;
+}
+
+.intro-list-item {    
+    font-weight: 500;
+    font-size: #{$font-lg}px;
+    
+    & + &  {
+        margin-top: #{$padding-quarter}px;
+    }
+
+    &--lg {
+        font-size: #{$font-lg}px;
+    }
+}
+
+.intro-list-item-link {
+    color: $color-white;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;    
+    
+    &:hover {
+        color: $color-turquoise-light;
+    }
+}
