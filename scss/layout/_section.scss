@@ -1,3 +1,5 @@
+$section-logo-icon-size: 130;
+
 .section {
     padding: #{$padding}px;
 
@@ -24,6 +26,11 @@
     font-size: #{$font-lg}px;
     letter-spacing: 2px;    
     text-transform: uppercase;
+}
+
+.section-icon {
+    display: inline-flex;
+    font-size: #{$section-logo-icon-size}px;
 }
 
 .section-content {
