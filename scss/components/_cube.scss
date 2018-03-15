@@ -1,12 +1,4 @@
-$cube-size: 300px;
-$cube-perspective: 450px;
-
 .cube-container {
-    text-align: center;
-}
-
-.cube-wrapper {
-    margin: 100px auto;
     perspective: $cube-perspective;    
     height: $cube-size;
     width: $cube-size;
@@ -16,6 +8,7 @@ $cube-perspective: 450px;
     position: relative;
     height: inherit;
     width: inherit;
+    text-align: center;        
     transform-style: preserve-3d;
     transition: transform 0.75s ease-in-out;
 }
@@ -27,6 +20,7 @@ $cube-perspective: 450px;
     opacity: 0.9;
     background-size: 100%;
     border: 1px solid $color-white;
+    border-radius: 10px;
     color: $color-white;
     display: flex;
     flex-direction: column;

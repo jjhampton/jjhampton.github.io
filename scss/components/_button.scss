@@ -1,0 +1,25 @@
+.button {
+    background-color: $color-white;
+    border-color: $color-turquoise-dark;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    color: $color-gray-dark;
+    cursor: pointer;
+    font-weight: 500;    
+    padding: 12px 14px;
+    width: 200px;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: lighten($color-turquoise-light, 15);        
+    }
+
+    &:active {
+        background-color: lighten($color-turquoise, 20);
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

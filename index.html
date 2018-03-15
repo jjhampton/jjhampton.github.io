@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no">
   <title>John Hampton | Software Developer</title>
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet">
 </head>
@@ -37,9 +36,9 @@
     </section>
 
     <!-- About -->
-    <section class="section section--linkable section--flex about" id="about">
-      <div class="section-label">
-        <h2 class="section-label-heading">About</h2>
+    <section class="section section--linkable about" id="about">
+      <div class="section-header">
+        <h2 class="section-header-title">About Me</h2>
         <div class="about-photo">
             <img src="img/photo.jpg" alt="Photograph of John Hampton" class="about-photo-image">
         </div>
@@ -54,31 +53,52 @@
     </section>
 
     <!-- Tools -->
-    <section class="section section--flex">
-      <div class="section-label">
-        <h2 class="section-label-heading">Toolchain</h2>
-        <i class="ion-ios-cog-outline section-icon"></i>
+    <section class="section toolchain">
+      <div class="section-header">
+        <h2 class="section-header-title">My Toolchain</h2>
       </div>
-      <div class="section-content">
-          <div class="cube-container">       
-              <div class="cube-wrapper">
-                  <div class="cube">
-                    <div class="cube-face  cube-face--front"><span>JavaScript</span></div>
-                    <div class="cube-face  cube-face--back"><span>SPA Frameworks</span></div>
-                    <div class="cube-face  cube-face--left"><span>Back-end Web</span></div>
-                    <div class="cube-face  cube-face--right"><span>CSS</span></div></span>
-                    <div class="cube-face  cube-face--top"><span>Build Tooling</span></div>
-                    <div class="cube-face  cube-face--bottom"><span>Package Management</span></div>
-                  </div>
-              </div>
-            </div>
+      <div class="section-content section-content--flex">
+        <div class="toolchain-topics">
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">ECMAScript</button>
+          </div>
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">Front-end Frameworks</button>
+          </div>
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">Back-end Frameworks</button>
+          </div>
+        </div>
+        
+        <div class="cube-container">        
+          <div class="cube">
+            <div class="cube-face  cube-face--front"><span>JavaScript</span></div>
+            <div class="cube-face  cube-face--back"><span>Front-end Web</span></div>
+            <div class="cube-face  cube-face--left"><span>Back-end Web</span></div>
+            <div class="cube-face  cube-face--right"><span>CSS & Layout</span></div></span>
+            <div class="cube-face  cube-face--top"><span>Build Tooling</span></div>
+            <div class="cube-face  cube-face--bottom"><span>Package Management</span></div>
+          </div>
+        </div>
+
+        <div class="toolchain-topics">
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">CSS & Layout</button>
+          </div>
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">Build Tooling</button>
+          </div>
+          <div class="toolchain-topics-item">
+            <button class="button button--circle">Package Management</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Work -->
     <section class="section section--linkable" id="work">
-      <div class="section-label">
-        <h2 class="section-label-heading">Work</h2>
+      <div class="section-header">
+        <h2 class="section-header-title">Work</h2>
       </div>
       <!-- TODO: Add more recent work experience here -->
       <div>
@@ -91,8 +111,8 @@
 
     <!-- Contact -->
     <section class="section" id="contact">
-      <div class="section-label">
-        <h2 class="section-label-heading">Contact</h2>
+      <div class="section-header">
+        <h2 class="section-header-title">Contact</h2>
       </div>
       <div><i class="fa fa-envelope social-link"></i><span class="contact-text">Email: john@johnhampton.net<span></div>
       <div><a href="https://twitter.com/johnjhampton"><i class="fa fa-twitter social-link"></i><span class="contact-text">Twitter: @johnjhampton</span></a></div>
