@@ -1,86 +1,103 @@
 .cube-container {
-    perspective: $cube-perspective;    
-    height: $cube-size;
-    width: $cube-size;
+  perspective: $cube-perspective;
+  height: $cube-size;
+  width: $cube-size;
 }
 
 .cube {
-    position: relative;
-    height: inherit;
-    width: inherit;
-    text-align: center;        
-    transform-style: preserve-3d;
-    transition: transform 0.75s ease-in-out;
+  position: relative;
+  height: inherit;
+  width: inherit;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.75s ease-in-out;
+
+  &--frontSelected {
+    transform: rotateY(0deg);
+  }
+
+  &--backSelected {
+    transform: rotateY(180deg);
+  }
+
+  &--leftSelected {
+    transform: rotateY(90deg);
+  }
+
+  &--rightSelected {
+    transform: rotateY(-90deg);
+  }
+
+  &--topSelected {
+    transform: rotateX(-90deg);
+  }
+
+  &--bottomSelected {
+    transform: rotateX(90deg);
+  }
 }
 
 .cube-face {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    opacity: 0.9;
-    background-size: 100%;
-    border: 1px solid $color-white;
-    border-radius: 10px;
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0.9;
+  background-size: 100%;
+  border: 1px solid $color-white;
+  border-radius: 8px;
+  color: $color-white;
+  padding: #{$padding}px;
 
-    span {
-        font-size: #{$font-xxlg}px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 2;
-    }
+  &--front {
+    background: linear-gradient(to right, $color-turquoise, $color-blue-light);
+    transform: translate3d(0, 0, $cube-size/2);
+  }
 
+  &--back {
+    background: linear-gradient(to right, $color-turquoise, $color-blue-light);
+    transform: rotateY(180deg) translate3d(0, 0, $cube-size/2);
+  }
 
-    &--front {
-        background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-        transform: translate3d(0, 0, $cube-size/2);
-    }
+  &--left {
+    background: linear-gradient(to right, $color-blue-light, $color-turquoise);
+    transform: rotateY(-90deg) translate3d(0, 0, $cube-size/2);
+  }
 
-    &--back {
-        background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-        transform: rotateY(180deg) translate3d(0, 0, $cube-size/2);
-    }
+  &--right {
+    background: linear-gradient(to right, $color-blue-light, $color-turquoise);
+    transform: rotateY(90deg) translate3d(0, 0, $cube-size/2);
+  }
 
-    &--left {
-        background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-        transform: rotateY(-90deg) translate3d(0, 0, $cube-size/2);
-    }
+  &--top {
+    background: linear-gradient(to right, $color-turquoise, $color-blue-light);
+    transform: rotateX(90deg) translate3d(0, 0, $cube-size/2);
+  }
 
-    &--right {
-        background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-        transform: rotateY(90deg) translate3d(0, 0, $cube-size/2);
-    }
-
-    &--top {
-        background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-        transform: rotateX(90deg) translate3d(0, 0, $cube-size/2);
-    }
-
-    &--bottom {
-        background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-        transform: rotateX(-90deg) translate3d(0, 0, $cube-size/2);
-    }
+  &--bottom {
+    background: linear-gradient(to right, $color-blue-light, $color-turquoise);
+    transform: rotateX(-90deg) translate3d(0, 0, $cube-size/2);
+  }
 }
 
-#radio-back:checked ~ .cube-wrapper .cube {
-    transform: rotateY(180deg);
+.cube-face-title {
+  font-size: #{$font-xlg}px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: #{$padding-quarter}px;
 }
 
-#radio-left:checked ~ .cube-wrapper .cube {
-    transform: rotateY(90deg);
+.cube-face-list {
+  margin-top: #{$padding-quarter}px;
 }
 
-#radio-right:checked ~ .cube-wrapper .cube {
-    transform: rotateY(-90deg);
-}
+.cube-face-list-item {
+  font-weight: 500;
 
-#radio-top:checked ~ .cube-wrapper .cube {
-    transform: rotateX(-90deg);
-}
-
-#radio-bottom:checked ~ .cube-wrapper .cube {
-    transform: rotateX(90deg);
+  & + & {
+    margin-top: #{$padding-quarter}px;
+  }
 }

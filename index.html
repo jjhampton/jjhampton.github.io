@@ -53,44 +53,81 @@
     </section>
 
     <!-- Tools -->
-    <section class="section toolchain">
+    <section class="section toolchain" id="toolchain">
       <div class="section-header">
         <h2 class="section-header-title">My Toolchain</h2>
       </div>
       <div class="section-content section-content--flex">
         <div class="toolchain-topics">
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">ECMAScript</button>
-          </div>
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">Front-end Frameworks</button>
-          </div>
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">Back-end Frameworks</button>
-          </div>
+          <button class="button button--circle button--selected" id="button-javascript">JavaScript</button>
+          <button class="button button--circle" id="button-frontend">Front-end Frameworks</button>
+          <button class="button button--circle" id="button-backend">Back-end Frameworks</button>
         </div>
         
         <div class="cube-container">        
-          <div class="cube">
-            <div class="cube-face  cube-face--front"><span>JavaScript</span></div>
-            <div class="cube-face  cube-face--back"><span>Front-end Web</span></div>
-            <div class="cube-face  cube-face--left"><span>Back-end Web</span></div>
-            <div class="cube-face  cube-face--right"><span>CSS & Layout</span></div></span>
-            <div class="cube-face  cube-face--top"><span>Build Tooling</span></div>
-            <div class="cube-face  cube-face--bottom"><span>Package Management</span></div>
+          <div class="cube cube--frontSelected" id="cube">
+            <div class="cube-face cube-face--front">
+              <h1 class="cube-face-title">JavaScript</h1>
+              <ul class="cube-face-list">
+                <li class="cube-face-list-item">ES2015</li>
+                <li class="cube-face-list-item">ES2016</li>
+                <li class="cube-face-list-item">ES2017+</li>
+                <li class="cube-face-list-item">TypeScript</li>                                
+              </ul>
+            </div>
+            <div class="cube-face cube-face--back">
+              <h1 class="cube-face-title">Front-end Frameworks</h1>
+              <ul class="cube-face-list">
+                <li class="cube-face-list-item">AngularJS</li>
+                <li class="cube-face-list-item">React</li>
+                <li class="cube-face-list-item">Ember</li>
+                <li class="cube-face-list-item">Backbone</li>                                
+              </ul>
+            </div>
+            <div class="cube-face cube-face--left">
+                <h1 class="cube-face-title">Back-end Frameworks</h1>
+                <ul class="cube-face-list">
+                  <li class="cube-face-list-item">NodeJS / Express</li>
+                  <li class="cube-face-list-item">Ruby on Rails</li>
+                  <li class="cube-face-list-item">ASP.NET Core</li>
+                  <li class="cube-face-list-item">Parse (BAAS)</li>                                
+                </ul>
+            </div>
+            <div class="cube-face cube-face--right">
+                <h1 class="cube-face-title">CSS & Layout</h1>
+                <ul class="cube-face-list">
+                  <li class="cube-face-list-item">Flexbox</li>
+                  <li class="cube-face-list-item">CSS Modules</li>
+                  <li class="cube-face-list-item">LESS</li>
+                  <li class="cube-face-list-item">Sass</li>                                
+                </ul>
+            </div>
+            <div class="cube-face cube-face--top">
+                <h1 class="cube-face-title">Build Tools</h1>
+                <ul class="cube-face-list">                   
+                  <li class="cube-face-list-item">Git & GitHub</li>
+                  <li class="cube-face-list-item">Webpack</li>
+                  <li class="cube-face-list-item">Gulp</li>
+                  <li class="cube-face-list-item">TravisCI</li>
+                  <li class="cube-face-list-item">TeamCity</li>                          
+                </ul>
+            </div>
+            <div class="cube-face cube-face--bottom">
+                <h1 class="cube-face-title">Package Managers</h1>
+                <ul class="cube-face-list">                   
+                  <li class="cube-face-list-item">NPM</li>
+                  <li class="cube-face-list-item">Yarn</li>
+                  <li class="cube-face-list-item">Bower</li>
+                  <li class="cube-face-list-item">Nuget</li>
+                </ul>
+            </div>
           </div>
         </div>
 
         <div class="toolchain-topics">
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">CSS & Layout</button>
-          </div>
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">Build Tooling</button>
-          </div>
-          <div class="toolchain-topics-item">
-            <button class="button button--circle">Package Management</button>
-          </div>
+          <button class="button button--circle" id="button-css">CSS & Layout</button>
+          <button class="button button--circle" id="button-build">Build Tools</button>
+          <button class="button button--circle" id="button-package">Package Managers</button>
         </div>
       </div>
     </section>

@@ -8,14 +8,15 @@
     cursor: pointer;
     font-weight: 500;    
     padding: 12px 14px;
-    width: 200px;
-    transition: background-color 0.2s ease-out;
+    width: 200px;  
 
-    &:hover {
-        background-color: lighten($color-turquoise-light, 15);        
+    &:hover:not(&--selected) {
+        background-color: lighten($color-turquoise-light, 15);
+        transition: background-color 0.5s ease-out;        
     }
 
-    &:active {
+    &:active,
+    &--selected {
         background-color: lighten($color-turquoise, 20);
     }
 

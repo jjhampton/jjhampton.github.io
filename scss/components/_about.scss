@@ -5,7 +5,7 @@ $about-photo-image-height: 110;
 }
 
 .about-photo {
-    margin-top: #{$padding-half}px;
+    margin-top: #{$padding * 0.75}px;
 }
 
 .about-photo-image {

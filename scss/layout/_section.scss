@@ -32,12 +32,15 @@ $section-logo-icon-size: 130;
     }
 }
 
-// .section-list {
-//     margin-top: #{$padding}px;
-// }
+.section-list {
+    margin: #{$padding}px auto 0;
+    width: 65%;
+}
 
-// .section-list-item {
-//     & + &  {
-//         margin-top: #{$padding}px;
-//     }
-// }
+.section-list-item {
+    text-align: justify;
+    
+    & + &  {
+        margin-top: #{$padding}px;
+    }
+}
