@@ -1,0 +1,29 @@
+.contact {
+    padding-bottom: 0;
+}
+
+.contact-list {
+    margin-top: #{$padding * 0.75}px;    
+}
+
+.contact-list-item {
+    color: $color-blue-dark;
+    flex: 1 0 25%;
+}
+
+.contact-list-item,
+.contact-list-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-icon {
+    font-size: 36px;
+}
+
+.contact-text {
+    margin-top: #{$padding-quarter}px;
+}
