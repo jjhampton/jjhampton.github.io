@@ -38,6 +38,7 @@ $section-logo-icon-size: 130;
 }
 
 .section-list-item {
+    color: $color-gray;
     text-align: justify;
     
     & + &  {
