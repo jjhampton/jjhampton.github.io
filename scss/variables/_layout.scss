@@ -4,8 +4,13 @@ $padding-half: $padding / 2;
 $padding-quarter: $padding /4;
 
 $header-height: 90;
+$header-height-mobile: 60;
 $sticky-header-height: $header-height * 0.5;
+$sticky-header-height-mobile: $header-height-mobile;
+
 $intro-height: 450;
+$intro-height-mobile: 425;
+
 $footer-height: $header-height * 0.5;
 
 

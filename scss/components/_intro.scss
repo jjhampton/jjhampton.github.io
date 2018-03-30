@@ -1,46 +1,50 @@
 .intro {
-    background: url(../../assets/img/earthspace.jpg) no-repeat center center;
-    background-size: cover;
-    height: #{$intro-height}px;
+  background: url(../../assets/img/earthspace.jpg) no-repeat center center;
+  background-size: cover;
+  height: #{$intro-height}px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include until($tablet) {
+    height: #{$intro-height-mobile}px;
+  }
 }
 
 .intro-heading {
-    color: $color-white;
-    font-size: #{$font-xlg}px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
+  color: $color-white;
+  font-size: #{$font-xlg}px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .intro-list {
-    color: $color-white;
-    margin-top: #{$padding-half}px;  
-    text-align: center;
+  color: $color-white;
+  margin-top: #{$padding-half}px;
+  text-align: center;
 }
 
-.intro-list-item {    
-    font-weight: 500;
-    font-size: #{$font-lg}px;
-    
-    & + &  {
-        margin-top: #{$padding-half}px;
-    }
+.intro-list-item {
+  font-weight: 500;
+  font-size: #{$font-lg}px;
 
-    &--lg {
-        font-size: #{$font-lg}px;
-    }
+  & + & {
+    margin-top: #{$padding-half}px;
+  }
+
+  &--lg {
+    font-size: #{$font-lg}px;
+  }
 }
 
 .intro-list-item-link {
-    color: $color-white;
-    font-weight: 500;
-    transition: all 0.15s ease-in-out;    
-    
-    &:hover {
-        color: $color-turquoise-light;
-    }
+  color: $color-white;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    color: $color-turquoise-light;
+  }
 }

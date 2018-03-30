@@ -1,11 +1,11 @@
-@media screen and (min-width: $phone-landscape + 1) {
-    .u-desktop-hide {
-        display: none !important;
-    }
+@include at-least($tablet) {
+  .u-desktop-hide {
+    display: none !important;
+  }
 }
 
-@media screen and (max-width: $phone-landscape) {
-    .u-mobile-hide {
-        display: none !important;
-    }
+@include until($tablet) {
+  .u-mobile-hide {
+    display: none !important;
+  }
 }

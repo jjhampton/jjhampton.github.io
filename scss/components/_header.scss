@@ -1,45 +1,71 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 
-    background-color: rgba(0,0,0,0);
-    height: #{$header-height}px;    
-    padding: 0 #{$padding-half}px;
-    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
-    z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  height: #{$header-height}px;
+  padding: 0 #{$padding-half}px;
+  transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+  z-index: 2;
+
+  @include until($tablet) {
+    height: #{$header-height-mobile}px;
+    padding: 0 #{$padding-three-quarter}px;
+  }
+}
+
+.header-menu-icon {
+  color: $color-white;
+  font-size: #{$font-xxlg}px;
 }
 
 .header-title {
-    color: $color-white;
-    font-size: 28px;
-    font-weight: 500;
-    transition: font-size 0.3s ease-in-out;    
+  color: $color-white;
+  font-size: 28px;
+  font-weight: 500;
+  transition: font-size 0.3s ease-in-out;
 
-    .sticky-parent & {
-        font-size: #{$font-xlg}px;        
-    }
+  .sticky-parent & {
+    font-size: #{$font-xlg}px;
+  }
+
+  @include until($tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: #{$font-xlg}px;
+  }
+}
+
+.header-title-separator {
+  padding: 0 6px;
+}
+
+.header-title-role {
+  @include until($tablet) {
+    font-size: #{$font-lg}px;
+  }
 }
 
 .header-nav {
-
 }
 
 .header-nav-item {
-    color: $color-white;
-    font-weight: 500;
-    padding: 4px;
-    text-decoration: none;     
-    transition: color 0.15s ease-in-out;   
+  color: $color-white;
+  font-weight: 500;
+  padding: 4px;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
 
-	&:hover {
-        color: $color-turquoise-light;
-	}
+  &:hover {
+    color: $color-turquoise-light;
+  }
 
-    & + & {
-        margin-left: #{$padding-half}px;
-    }
+  & + & {
+    margin-left: #{$padding-half}px;
+  }
 }

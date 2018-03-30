@@ -1,4 +1,8 @@
 .main {
-    position: relative;
-    top: -#{$header-height}px;
+  position: relative;
+  top: -#{$header-height}px;
+
+  @include until($tablet) {
+    top: -#{$header-height-mobile}px;
+  }
 }

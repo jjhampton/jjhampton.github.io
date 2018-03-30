@@ -2,10 +2,6 @@ $section-logo-icon-size: 130;
 
 .section {
     padding: #{$padding}px;
-
-    &--stretch {
-        padding: #{$padding}px 0;
-    }
 }
 
 .section-header {
