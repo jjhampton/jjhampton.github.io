@@ -1,39 +1,48 @@
 $section-logo-icon-size: 130;
 
 .section {
-    padding: #{$padding}px;
+  padding: #{$padding}px;
 }
 
 .section-header {
-    text-align: center;
+  text-align: center;
 }
 
 .section-header-title {
-    font-size: #{$font-lg}px;
-    letter-spacing: 2px;    
-    text-transform: uppercase;
+  font-size: #{$font-lg}px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .section-content {
-    padding: 0 #{$padding}px;
+  &--flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    &--flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+  @include at-least($tablet) {
+    padding: 0 #{$padding}px;
+  }
 }
 
 .section-list {
-    margin: #{$padding}px auto 0;
+  margin: #{$padding}px auto 0;
+
+  @include at-least($tablet) {
     width: 65%;
+  }
 }
 
 .section-list-item {
-    color: $color-gray;
-    text-align: justify;
-    
-    & + &  {
-        margin-top: #{$padding}px;
-    }
+  color: $color-gray;
+  text-align: justify;
+
+  & + & {
+    margin-top: #{$padding}px;
+  }
+
+  @include until($tablet) {
+    line-height: 1.2;
+  }
 }
