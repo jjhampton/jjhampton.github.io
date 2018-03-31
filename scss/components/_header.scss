@@ -14,7 +14,7 @@
 
   @include until($tablet) {
     height: #{$header-height-mobile}px;
-    padding: 0 #{$padding-three-quarter}px;
+    padding: 0 #{$padding-half}px;
   }
 }
 
@@ -36,7 +36,6 @@
   @include until($tablet) {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: #{$font-xlg}px;
   }
 }
@@ -67,5 +66,11 @@
 
   & + & {
     margin-left: #{$padding-half}px;
+  }
+
+  @include until($tablet) {
+    & + & {
+      margin-left: #{$padding-quarter}px;
+    }
   }
 }
