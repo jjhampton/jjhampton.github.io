@@ -1,29 +1,40 @@
 .contact {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact-list {
-    margin-top: #{$padding * 0.75}px;    
+  display: flex;
+  margin-top: #{$padding * 0.75}px;
+
+  @include until($tablet) {
+    flex-flow: row wrap;
+  }
 }
 
 .contact-list-item {
-    color: $color-blue-dark;
-    flex: 1 0 25%;
+  color: $color-blue-dark;
+  flex: 1 0 25%;
+
+  @include until($tablet) {
+    flex: 1 0 50%;
+    margin-bottom: #{$padding-half}px;
+  }
 }
 
 .contact-list-item,
 .contact-list-item a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .contact-icon {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .contact-text {
-    margin-top: #{$padding-quarter}px;
+  margin-top: #{$padding-quarter}px;
+  text-align: center;
 }

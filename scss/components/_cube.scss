@@ -1,11 +1,11 @@
 .cube-container {
   height: $cube-size;
 
-  @include until($tablet) {
+  @include until($desktop-sm) {
     width: 100%;
   }
 
-  @include at-least($tablet) {
+  @include at-least($desktop-sm) {
     perspective: $cube-perspective;
     width: $cube-size;
   }
@@ -18,7 +18,7 @@
   text-align: center;
   transform-style: preserve-3d;
 
-  @include at-least($tablet) {
+  @include at-least($desktop-sm) {
     transition: transform 0.75s ease-in-out;
   }
 
