@@ -1,57 +1,69 @@
 .work {
-
 }
 
 .work-list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: #{$padding * 0.75}px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: #{$padding * 0.75}px;
+
+  @include until($tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .work-list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid $color-turquoise-dark;
-    border-radius: 8px;
-    box-shadow: none;
-    padding: #{$padding}px #{$padding-quarter}px;
-    transition: box-shadow 0.15s linear;    
-    width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid $color-turquoise-dark;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: #{$padding}px #{$padding-quarter}px;
+  transition: box-shadow 0.15s linear;
+  width: 250px;
 
-    &:hover {
-        box-shadow: 0 0 1px 1px $color-turquoise;
+  &:hover {
+    box-shadow: 0 0 1px 1px $color-turquoise;
+  }
+
+  @include until($tablet) {
+    width: 100%;
+
+    & + & {
+        margin-top: #{$padding-half}px
     }
+  }
 }
 
 .work-list-item-title {
-    display: flex;
-    font-size: #{$font-lg}px;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    text-align: center;
+  display: flex;
+  font-size: #{$font-lg}px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  text-align: center;
 
-    &:before,
-    &:after {
-        flex-grow: 1;
-        height: 2px;
-        content: '\a0';
-        background-color: $color-turquoise-dark;
-        align-self: center;
-        margin: 0 10px 0 10px;
-    }
+  &:before,
+  &:after {
+    flex-grow: 1;
+    height: 2px;
+    content: "\a0";
+    background-color: $color-turquoise-dark;
+    align-self: center;
+    margin: 0 10px 0 10px;
+  }
 }
 
-.work-list-item-description {    
-    color: $color-gray;
-    margin-top: #{$padding-half}px;
-    text-align: center;
+.work-list-item-description {
+  color: $color-gray;
+  margin-top: #{$padding-half}px;
+  text-align: center;
 }
 
 .work-list-item-link {
-    display: inline-block;
-    font-size: #{$font-sm}px;
-    margin-top: auto;
-    padding-top: #{$padding-half}px;    
-    text-align: center;
+  display: inline-block;
+  font-size: #{$font-sm}px;
+  margin-top: auto;
+  padding-top: #{$padding-half}px;
+  text-align: center;
 }
