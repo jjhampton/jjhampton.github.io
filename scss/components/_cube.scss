@@ -1,7 +1,14 @@
 .cube-container {
-  perspective: $cube-perspective;
   height: $cube-size;
-  width: $cube-size;
+
+  @include until($tablet) {
+    width: 100%;
+  }
+
+  @include at-least($tablet) {
+    perspective: $cube-perspective;
+    width: $cube-size;
+  }
 }
 
 .cube {
@@ -10,7 +17,10 @@
   width: inherit;
   text-align: center;
   transform-style: preserve-3d;
-  transition: transform 0.75s ease-in-out;
+
+  @include at-least($tablet) {
+    transition: transform 0.75s ease-in-out;
+  }
 
   &--frontSelected {
     transform: rotateY(0deg);
@@ -44,12 +54,15 @@
   width: inherit;
   height: inherit;
   position: absolute;
-  opacity: 0.9;
   background-size: 100%;
   border: 1px solid $color-white;
   border-radius: 8px;
   color: $color-white;
   padding: #{$padding}px;
+
+  @include at-least($tablet) {
+    opacity: 0.9;
+  }
 
   &--front {
     background: linear-gradient(to right, $color-turquoise, $color-blue-light);
@@ -80,6 +93,7 @@
     background: linear-gradient(to right, $color-blue-light, $color-turquoise);
     transform: rotateX(-90deg) translate3d(0, 0, $cube-size/2);
   }
+  
 }
 
 .cube-face-title {

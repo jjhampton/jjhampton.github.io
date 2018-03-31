@@ -2,6 +2,10 @@ $section-logo-icon-size: 130;
 
 .section {
   padding: #{$padding}px;
+
+  @include until($tablet) {
+    padding: #{$padding}px #{$padding-half}px;
+  }
 }
 
 .section-header {
