@@ -16,34 +16,34 @@
   height: inherit;
   width: inherit;
   text-align: center;
-  transform-style: preserve-3d;
 
   @include at-least($desktop-sm) {
+    transform-style: preserve-3d;
     transition: transform 0.75s ease-in-out;
-  }
 
-  &--frontSelected {
-    transform: rotateY(0deg);
-  }
+    &--frontSelected {
+      transform: rotateY(0deg);
+    }
 
-  &--backSelected {
-    transform: rotateY(180deg);
-  }
+    &--backSelected {
+      transform: rotateY(180deg);
+    }
 
-  &--leftSelected {
-    transform: rotateY(90deg);
-  }
+    &--leftSelected {
+      transform: rotateY(90deg);
+    }
 
-  &--rightSelected {
-    transform: rotateY(-90deg);
-  }
+    &--rightSelected {
+      transform: rotateY(-90deg);
+    }
 
-  &--topSelected {
-    transform: rotateX(-90deg);
-  }
+    &--topSelected {
+      transform: rotateX(-90deg);
+    }
 
-  &--bottomSelected {
-    transform: rotateX(90deg);
+    &--bottomSelected {
+      transform: rotateX(90deg);
+    }
   }
 }
 
@@ -60,40 +60,104 @@
   color: $color-white;
   padding: #{$padding}px;
 
-  @include at-least($tablet) {
-    opacity: 0.9;
-  }
-
   &--front {
     background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-    transform: translate3d(0, 0, $cube-size/2);
   }
 
   &--back {
     background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-    transform: rotateY(180deg) translate3d(0, 0, $cube-size/2);
   }
 
   &--left {
     background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-    transform: rotateY(-90deg) translate3d(0, 0, $cube-size/2);
   }
 
   &--right {
     background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-    transform: rotateY(90deg) translate3d(0, 0, $cube-size/2);
   }
 
   &--top {
     background: linear-gradient(to right, $color-turquoise, $color-blue-light);
-    transform: rotateX(90deg) translate3d(0, 0, $cube-size/2);
   }
 
   &--bottom {
     background: linear-gradient(to right, $color-blue-light, $color-turquoise);
-    transform: rotateX(-90deg) translate3d(0, 0, $cube-size/2);
   }
-  
+
+  @include until($desktop-sm) {
+    &--front,
+    &--back,
+    &--left,
+    &--right,
+    &--top,
+    &--bottom {
+      display: none;
+    }
+
+    .cube--frontSelected & {
+      &--front {
+        display: block;
+      }
+    }
+
+    .cube--backSelected & {
+      &--back {
+        display: block;
+      }
+    }
+
+    .cube--leftSelected & {
+      &--left {
+        display: block;
+      }
+    }
+
+    .cube--rightSelected & {
+      &--right {
+        display: block;
+      }
+    }
+
+    .cube--topSelected & {
+      &--top {
+        display: block;
+      }
+    }
+
+    .cube--bottomSelected & {
+      &--bottom {
+        display: block;
+      }
+    }
+  }
+
+  @include at-least($desktop-sm) {
+    opacity: 0.9;
+
+    &--front {
+      transform: translate3d(0, 0, $cube-size/2);
+    }
+
+    &--back {
+      transform: rotateY(180deg) translate3d(0, 0, $cube-size/2);
+    }
+
+    &--left {
+      transform: rotateY(-90deg) translate3d(0, 0, $cube-size/2);
+    }
+
+    &--right {
+      transform: rotateY(90deg) translate3d(0, 0, $cube-size/2);
+    }
+
+    &--top {
+      transform: rotateX(90deg) translate3d(0, 0, $cube-size/2);
+    }
+
+    &--bottom {
+      transform: rotateX(-90deg) translate3d(0, 0, $cube-size/2);
+    }
+  }
 }
 
 .cube-face-title {
